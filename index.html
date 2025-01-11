@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Coaching Institute</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+       /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Root Setup */
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    min-height: calc(100vh - 60px); /* Accounts for nav height */
+    background-color: #f4f4f4;
+    overflow: hidden; /* Prevents vertical scrolling */
+}
+
+/* Content Section */
+.content {
+    max-width: 50%;
+    padding: 20px;
+    background-color: #ffeb3b;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.content a:hover {
+    background-color: #0056b3;
+}
+
+/* Images Section */
+.images {
+    max-width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.img4 {
+    transform: translateY(-33%);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+
+    .images {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+        margin-top: 10%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Block Tech</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">How to Work</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="content">
+        <h1>Achieve Your Goals with Expert, Learn what you want</h1>
+        <p>Our bussiness institute provides tailored programs to help you excel in your career and life. Join us to unlock your potential.</p>
+        <a href="#">100% Selection Gurantee</a>
+        <a href="#">Get Started</a>
+    </div>
+    <div class="images">
+        <img src="https://i.pinimg.com/474x/9c/3e/59/9c3e5962fe676f234959f1db545a6b9d.jpg" alt="Coaching 1">
+        <img src="https://i.pinimg.com/236x/36/c2/45/36c245790fd3deb623cef6fee58aee43.jpg" alt="Coaching 2">
+        <img src="https://i.pinimg.com/736x/c6/b1/2e/c6b12e0457413abce1f8123ed5e8d04d.jpg" alt="Coaching 3">
+        <img src="https://i.pinimg.com/236x/2f/4c/41/2f4c41f632914b6ab0259f606958a0b3.jpg" class="img4">
+    </div>
+</div>
+
+</body>
+</html>
