@@ -4,10 +4,9 @@
     box-sizing: border-box;
 }
 
-/* Body and Root Setup */
 html, body {
     height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 body {
@@ -15,7 +14,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -24,7 +22,9 @@ nav {
     padding: 10px 20px;
     color: white;
 }
-
+nav i{
+    display: none;
+}
 nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -50,23 +50,22 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main Container */
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 50px 20px;
-    min-height: calc(100vh - 60px); /* Accounts for nav height */
+    min-height: calc(100vh - 60px);
     background-color: #f4f4f4;
-    overflow: hidden; /* Prevents vertical scrolling */
+    overflow: hidden; 
 }
 
 /* Content Section */
 .content {
     max-width: 50%;
     padding: 20px;
-    background-color: #ffeb3b;
+    /* background-color: #ffeb3b; */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -96,7 +95,6 @@ nav ul li a:hover {
     background-color: #0056b3;
 }
 
-/* Images Section */
 .images {
     max-width: 45%;
     display: grid;
@@ -115,24 +113,14 @@ nav ul li a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .content {
-        max-width: 90%;
-    }
-
-    .images {
-        max-width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 768px) {
+    nav i{
+        display:inline;
+        font-size: 25px;
+    }
+    nav ul{
+        display: none;
+    }
     .container {
         flex-direction: column;
         align-items: center;
@@ -145,6 +133,17 @@ nav ul li a:hover {
     .images {
         grid-template-columns: 1fr;
         margin-top: 10%;
+        margin-right: 120px;
+        padding-bottom: 80px;
+    }
+    .content a {
+        margin-top: 15px;
+    }
+    .img4 {
+        transform: translateY(2%);
+    }
+    .images img {
+        width: 180%;
     }
 
 }
